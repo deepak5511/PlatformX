@@ -1,0 +1,42 @@
+# Project To-Do List
+
+This document outlines the remaining tasks and areas for improvement in the Trading Simulation Application.
+
+## Phase 8: Integrate and Test Application (Mostly Completed)
+
+*   **Live Trades UI Integration:** Completed. The UI components for Live Trades have been integrated and are visible.
+*   **Analytics Dashboard UI Integration:** Completed. The UI components for the Analytics Dashboard have been integrated and are visible.
+*   **Real-time Trade Feedback:** **IN PROGRESS / NEEDS FURTHER DEVELOPMENT.**
+    *   Currently, there is no immediate visual feedback on trade success/failure.
+    *   P&L and portfolio value do not update in real-time after a trade.
+    *   **Action:** Implement real-time updates for P&L and portfolio value after trade execution. This will likely require backend integration and WebSocket communication.
+*   **Error Handling for Trades:** **IN PROGRESS / NEEDS FURTHER DEVELOPMENT.**
+    *   The `ErrorMessageCard` component has been integrated into the `TradingInterface.jsx`.
+    *   However, the application does not yet display specific error messages for invalid trades (e.g., insufficient funds, invalid quantity).
+    *   **Action:** Implement logic to trigger and display appropriate error messages using the `ErrorMessageCard` for various invalid trade scenarios.
+
+## Phase 9: Deliver Working Application and Instructions (PENDING)
+
+*   **Full Backend Integration:** The current application uses mock data. For a fully functional simulation, a robust backend is required to handle:
+    *   User authentication and session management.
+    *   Real-time market data feeds.
+    *   Trade execution and order book management.
+    *   Portfolio management and P&L calculation.
+    *   Simulation state management (start, pause, end).
+    *   Data persistence for scenarios, trades, and user performance.
+    *   **Action:** Develop and integrate a backend system to support all core functionalities.
+*   **Participant Workflow Verification (Full):** While the UI is integrated, the full end-to-end participant experience needs to be verified with a live backend.
+    *   **Action:** Conduct comprehensive testing of participant login, trading, real-time updates, and results viewing once the backend is in place.
+*   **Logout Functionality:** Implement and test logout functionality for both facilitator and participant roles.
+*   **Deployment:** Prepare the application for deployment to a production environment.
+*   **Documentation:** Create comprehensive documentation for setting up, running, and using the application (for both users and developers).
+
+## General Improvements / Future Considerations
+
+*   **User Interface Enhancements:** Continue refining the UI/UX for a more intuitive and engaging experience.
+*   **Performance Optimization:** Optimize the application for speed and responsiveness, especially with real-time data.
+*   **Security:** Implement robust security measures for user data and transactions.
+*   **Scalability:** Design the application to be scalable to accommodate a larger number of users and simulations.
+*   **Testing:** Implement a comprehensive suite of unit, integration, and end-to-end tests.
+
+
